@@ -44,5 +44,38 @@ function rockPaperScissors(playerInput, computerSelection) {
     }
 }
 
-console.log(rockPaperScissors("Rock", getComputerChoice()));
+function game() {
+    let playerScore = 0;
+    let computerScore = 0
+    for (let i = 0; i < 5; i++) {
+        let round = rockPaperScissors(prompt("Rock, Paper or Scissors?"), getComputerChoice())
+        if (round === "You lose. Paper covers rock.") {
+            computerScore += 1;
+            alert(round);
+        }
+        else if (round === "You win. Rock blunts scissors.") {
+            playerScore += 1;
+            alert(round);
+        }
+        else if (round === "You win. Scissors cut paper.") {
+            playerScore += 1;
+            alert(round);
+        }
+        else if (round === "You lose. Rock blunts scissors.") {
+            computerScore += 1;
+            alert(round);
+        }
+        else if (round === "You lose. Scissors cut paper.") {
+            computerScore += 1;
+            alert(round);
+        }
+        else if (round === "You win. Paper covers rock.") {
+            playerScore += 1;
+            alert(round);
+        }
+    }
+    return "Your score is " + playerScore + ". The computer's score is " + computerScore + "."
+}
+
+console.log(game());
 
