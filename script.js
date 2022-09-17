@@ -73,6 +73,9 @@ function game() {
             playerScore += 1;
             alert(round);
         }
+        else if (round === "Draw.") {
+            alert(round);
+        }
     }
     if (computerScore > playerScore) {
         return "You lose. The computer scored " + computerScore + " points, while you scored " + playerScore + " points.";
@@ -86,5 +89,5 @@ function game() {
      }
 }
 
-console.log(game());
+alert(game());
 
