@@ -78,10 +78,12 @@ function game() {
         }
     }
     if (computerScore > playerScore) {
-        return "You lose. The computer scored " + computerScore + " points, while you scored " + playerScore + " points.";
+        return "You lose. The computer scored " + computerScore + " points, while you scored " + 
+        playerScore + " points.";
     }
     else if (computerScore < playerScore) {
-        return "You win! You scored " + playerScore + " points, while the computer scored " + computerScore + " points.";
+        return "You win! You scored " + playerScore + " points, while the computer scored " + 
+        computerScore + " points.";
      }
      
      else {
