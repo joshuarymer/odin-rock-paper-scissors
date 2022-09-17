@@ -74,7 +74,16 @@ function game() {
             alert(round);
         }
     }
-    return "Your score is " + playerScore + ". The computer's score is " + computerScore + "."
+    if (computerScore > playerScore) {
+        return "You lose. The computer scored " + computerScore + " points, while you scored " + playerScore + " points.";
+    }
+    else if (computerScore < playerScore) {
+        return "You win! You scored " + playerScore + " points, while the computer scored " + computerScore + " points.";
+     }
+     
+     else {
+        return "It's a draw!";
+     }
 }
 
 console.log(game());
