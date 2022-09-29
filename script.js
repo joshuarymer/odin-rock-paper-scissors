@@ -43,4 +43,11 @@ function rockPaperScissors(playerInput, computerSelection) {
     }
 }
 
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+
+btn1.addEventListener("click", () => rockPaperScissors("rock", getComputerChoice()));
+btn2.addEventListener("click", () => rockPaperScissors("paper", getComputerChoice()));
+btn3.addEventListener("click", () => rockPaperScissors("scissors", getComputerChoice()));
 
