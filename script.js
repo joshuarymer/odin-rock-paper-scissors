@@ -1,7 +1,7 @@
 
 
 function getComputerChoice() {
-        let randomNum = Math.floor((Math.random()*100)%3)
+        let randomNum = Math.floor((Math.random()*3));
         if (randomNum === 0) {
             return "rock";
         }
@@ -14,32 +14,33 @@ function getComputerChoice() {
 }
  
 function rockPaperScissors(playerInput, computerSelection) {
-    playerSelection = playerInput.toLowerCase();
-    if (playerSelection === "rock" && computerSelection === "paper") {
-        return "You lose. Paper covers rock.";
+    if (playerInput === "rock" && computerSelection === "paper") {
+        alert("You lose. Paper covers rock.");
     }
-    else if(playerSelection === "rock" && computerSelection === "scissors") {
-        return "You win. Rock blunts scissors.";
+    else if(playerInput === "rock" && computerSelection === "scissors") {
+        alert("You win. Rock blunts scissors.");
     }
-    else if(playerSelection === "rock" && computerSelection === "rock") {
-        return "Draw.";
+    else if(playerInput === "rock" && computerSelection === "rock") {
+        alert("Draw.");
+    }    
+    else if (playerInput === "scissors" && computerSelection === "paper") {
+        alert("You win. Scissors cut paper.");
     }
-    else if (playerSelection === "scissors" && computerSelection === "paper") {
-        return "You win. Scissors cut paper.";
+    else if(playerInput === "scissors" && computerSelection === "scissors") {
+        alert("Draw.");
     }
-    else if(playerSelection === "scissors" && computerSelection === "scissors") {
-        return "Draw.";
+    else if(playerInput === "scissors" && computerSelection === "rock") {
+        alert("You lose. Rock blunts scissors.");
     }
-    else if(playerSelection === "scissors" && computerSelection === "rock") {
-        return "You lose. Rock blunts scissors.";
+    else if (playerInput === "paper" && computerSelection === "paper") {
+        alert("Draw.");
     }
-    else if (playerSelection === "paper" && computerSelection === "paper") {
-        return "Draw.";
+    else if(playerInput === "paper" && computerSelection === "scissors") {
+        alert("You lose. Scissors cut paper.");
     }
-    else if(playerSelection === "paper" && computerSelection === "scissors") {
-        return "You lose. Scissors cut paper.";
-    }
-    else if(playerSelection === "paper" && computerSelection === "rock") {
-        return "You win. Paper covers rock.";
+    else if(playerInput === "paper" && computerSelection === "rock") {
+        alert("You win. Paper covers rock.");
     }
 }
+
+
