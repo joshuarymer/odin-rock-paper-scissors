@@ -14,7 +14,9 @@ body {
 }
 
 #resultscon {
-    height: 300px;
-    width: 300px;
+    display: flex;
     border: 5px solid green;
+    min-width: 300px;
+    min-height: 100px;
+    white-space: pre;
 }
