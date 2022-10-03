@@ -13,7 +13,7 @@ function getComputerChoice() {
         }
 }
  
-function rockPaperScissors(playerInput, computerSelection) {
+function playRound(playerInput, computerSelection) {
     if (playerInput === "rock" && computerSelection === "paper") {
         alert("You lose. Paper covers rock.");
     }
@@ -47,7 +47,7 @@ const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
 
-btn1.addEventListener("click", () => rockPaperScissors("rock", getComputerChoice()));
-btn2.addEventListener("click", () => rockPaperScissors("paper", getComputerChoice()));
-btn3.addEventListener("click", () => rockPaperScissors("scissors", getComputerChoice()));
+btn1.addEventListener("click", () => playRound("rock", getComputerChoice()));
+btn2.addEventListener("click", () => playRound("paper", getComputerChoice()));
+btn3.addEventListener("click", () => playRound("scissors", getComputerChoice()));
 
