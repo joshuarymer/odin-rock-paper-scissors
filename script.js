@@ -1,3 +1,14 @@
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+
+btn1.addEventListener("click", () => playRound("rock", getComputerChoice()));
+btn2.addEventListener("click", () => playRound("paper", getComputerChoice()));
+btn3.addEventListener("click", () => playRound("scissors", getComputerChoice()));
+
+const results = document.getElementById("resultscon");
+
+
 
 
 function getComputerChoice() {
@@ -15,39 +26,35 @@ function getComputerChoice() {
  
 function playRound(playerInput, computerSelection) {
     if (playerInput === "rock" && computerSelection === "paper") {
-        alert("You lose. Paper covers rock.");
+        results.textContent = "You lose. Paper covers rock.";
     }
     else if(playerInput === "rock" && computerSelection === "scissors") {
-        alert("You win. Rock blunts scissors.");
+        results.textContent = "You win. Rock blunts scissors.";
     }
     else if(playerInput === "rock" && computerSelection === "rock") {
-        alert("Draw.");
+        results.textContent = "Draw.";
     }    
     else if (playerInput === "scissors" && computerSelection === "paper") {
-        alert("You win. Scissors cut paper.");
+        results.textContent = "You win. Scissors cut paper.";
     }
     else if(playerInput === "scissors" && computerSelection === "scissors") {
-        alert("Draw.");
+        results.textContent = "Draw.";
     }
     else if(playerInput === "scissors" && computerSelection === "rock") {
-        alert("You lose. Rock blunts scissors.");
+        results.textContent = "You lose. Rock blunts scissors.";
     }
     else if (playerInput === "paper" && computerSelection === "paper") {
-        alert("Draw.");
+        results.textContent = "Draw.";
     }
     else if(playerInput === "paper" && computerSelection === "scissors") {
-        alert("You lose. Scissors cut paper.");
+        results.textContent = "You lose. Scissors cut paper.";
     }
     else if(playerInput === "paper" && computerSelection === "rock") {
-        alert("You win. Paper covers rock.");
+        results.textContent = "You win. Paper covers rock.";
     }
 }
 
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
 
-btn1.addEventListener("click", () => playRound("rock", getComputerChoice()));
-btn2.addEventListener("click", () => playRound("paper", getComputerChoice()));
-btn3.addEventListener("click", () => playRound("scissors", getComputerChoice()));
+
+
 
