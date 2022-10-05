@@ -17,6 +17,6 @@ body {
     display: flex;
     border: 5px solid green;
     min-width: 300px;
-    min-height: 100px;
+    min-height: 40px;
     white-space: pre;
 }
