@@ -30,13 +30,19 @@ if (playerInput === "rock" && computerSelection === "paper") {
     computerScore += 1;
     if(playerScore === 5) {
         results.textContent = "You win! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else if(computerScore === 5) {
         results.textContent = "You lose! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else {
-    results.textContent += "Round " + currentRound + ": You lose. Paper covers rock.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": You lose. Paper covers rock.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
     }
 }    
@@ -44,71 +50,94 @@ else if(playerInput === "rock" && computerSelection === "scissors") {
     playerScore += 1;
     if(playerScore === 5) {
         results.textContent = "You win! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else if(computerScore === 5) {
         results.textContent = "You lose! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else {
-    results.textContent += "Round " + currentRound + ": You win. Rock blunts scissors.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": You win. Rock blunts scissors.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
     }
 }    
 else if(playerInput === "rock" && computerSelection === "rock") {
-    results.textContent += "Round " + currentRound + ": Draw.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": Draw.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
 }    
 else if (playerInput === "scissors" && computerSelection === "paper") {
     playerScore += 1;
     if(playerScore === 5) {
         results.textContent = "You win! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else if(computerScore === 5) {
         results.textContent = "You lose! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else {
-    results.textContent += "Round " + currentRound + ": You win. Scissors cut paper.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": You win. Scissors cut paper.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
     }
 }    
 else if(playerInput === "scissors" && computerSelection === "scissors") {
-    results.textContent += "Round " + currentRound + ": Draw.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": Draw.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
 }
 else if(playerInput === "scissors" && computerSelection === "rock") {
     computerScore += 1;
     if(playerScore === 5) {
         results.textContent = "You win! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else if(computerScore === 5) {
         results.textContent = "You lose! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else {
-    results.textContent += "Round " + currentRound + ": You lose. Rock blunts scissors.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
-    
-        
-    }                    currentRound += 1;
+    results.textContent = "Round " + currentRound + ": You lose. Rock blunts scissors.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
+    currentRound += 1;
+    }
 }
 else if (playerInput === "paper" && computerSelection === "paper") {
-    results.textContent += "Round " + currentRound + ": Draw.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": Draw.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
 }
 else if(playerInput === "paper" && computerSelection === "scissors") {
     computerScore += 1;
     if(playerScore === 5) {
         results.textContent = "You win! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else if(computerScore === 5) {
         results.textContent = "You lose! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else {
-    results.textContent += "Round " + currentRound + ": You lose. Scissors cut paper.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": You lose. Scissors cut paper.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
     }
 }    
@@ -116,13 +145,19 @@ else if(playerInput === "paper" && computerSelection === "rock") {
     playerScore += 1;
     if(playerScore === 5) {
         results.textContent = "You win! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else if(computerScore === 5) {
         results.textContent = "You lose! Game over."
+        currentRound = 1;
+        playerScore = 0;
+        computerScore = 0;
     }
     else {
-    results.textContent += "Round " + currentRound + ": You win. Paper covers rock.\nYou: "
-                        + playerScore + " Computer: " + computerScore + ".\n";
+    results.textContent = "Round " + currentRound + ": You win. Paper covers rock.\nYou: "
+                        + playerScore + " Computer: " + computerScore + ".";
     currentRound += 1;
     }
 }    
